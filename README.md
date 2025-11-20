@@ -188,3 +188,22 @@ INSERT IGNORE INTO materias (nombre, codigo, creditos) VALUES
 </details>
 
 > 🗂️ Archivo: [Base de Datos - Test](./scripts/init.sql)
+
+## Para ingresar a MySQL:
+```sh
+docker exec -it mysql-admlinux mysql -u $USUARIO -p
+```
+Eligiendo el usuario con el que se quiera iniciar.<br>
+Los usuarios predeterminados tendrán los siguientes códigos de entrada:<br>
+Root:<br>
+```sh
+docker exec -it mysql-admlinux mysql -u root -p
+```
+AdmLinux:<br>
+```sh
+docker exec -it mysql-admlinux mysql -u admlinux -p
+```
+Usuario_Lectura:
+```sh
+docker exec -it mysql-admlinux mysql -u usuario_lectura -p
+```
