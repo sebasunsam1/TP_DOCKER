@@ -1,10 +1,9 @@
 -- Crear usuarios con permisos
-CREATE USER IF NOT EXISTS 'admlinux'@'%' IDENTIFIED BY 'blabla';
+CREATE USER IF NOT EXISTS 'admlinux'@'%' IDENTIFIED BY 'admin';
 GRANT ALL PRIVILEGES ON *.* TO 'admlinux'@'%' WITH GRANT OPTION;
 
-CREATE USER IF NOT EXISTS 'usuario_lectura'@'%' IDENTIFIED BY 'blabla';
+CREATE USER IF NOT EXISTS 'usuario_lectura'@'%' IDENTIFIED BY 'user';
 GRANT SELECT ON sistema_facultad.* TO 'usuario_lectura'@'%';
-GRANT SELECT ON information_schema.* TO 'usuario_lectura'@'%';
 
 FLUSH PRIVILEGES;
 
