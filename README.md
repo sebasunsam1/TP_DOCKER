@@ -194,14 +194,14 @@ INSERT IGNORE INTO materias (nombre, codigo, creditos) VALUES
 docker exec -it mysql-admlinux mysql -u $USUARIO -p
 ```
 Se elige el usuario con el que se quiera iniciar.<br>
-Los usuarios predeterminados tendrán los siguientes códigos de entrada:<br>
-Root:<br>
-```sh
-docker exec -it mysql-admlinux mysql -u root -p
-```
+Los usuarios predeterminados tendrán los siguientes códigos de entrada:<br><br>
 AdmLinux:<br>
 ```sh
 docker exec -it mysql-admlinux mysql -u admlinux -p
+```
+Root:<br>
+```sh
+docker exec -it mysql-admlinux mysql -u root -p
 ```
 Usuario_Lectura:
 ```sh
